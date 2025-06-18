@@ -9,7 +9,7 @@ export const getCurrentWeather = async (city) => {
 		const response = await axios.get(baseURL, {
 			params: {
 				q: city,
-				unit: "metric",
+				units: "metric",
 				appid: apiKey,
 			},
 		});
